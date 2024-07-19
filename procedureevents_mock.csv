@@ -1,0 +1,11 @@
+subject_id,hadm_id,stay_id,starttime,endtime,storetime,itemid,value,valueuom,location,locationcategory,orderid,linkorderid,ordercategoryname,secondaryordercategoryname,ordercategorydescription,patientweight,totalamount,totalamountuom,isopenbag,continueinnextdept,cancelreason,statusdescription,comments_date,originalamount,originalrate
+15693895,21203492,34766377,2147-06-05 11:25:00,2147-06-05 11:26:00,2147-06-06 11:25:00,225399,1,None,,,6591564,6591564,Procedures,,Task,80,,,0,0,0,FinishedRunning,,1,0
+15693895,21203492,34766377,2147-06-05 22:00:00,2147-06-05 22:01:00,2147-06-06 11:25:00,224385,1,None,,,1706064,1706064,Intubation/Extubation,,Task,80,,,0,0,0,FinishedRunning,,1,0
+12481680,26876606,30988462,2141-01-23 12:00:00,2141-01-23 18:33:00,2141-01-23 18:33:51.14,224275,393,min,,,8373796,8373796,Peripheral Lines,,ContinuousProcess,123,,,1,0,0,FinishedRunning,,393,1
+12481680,26876606,30988462,2141-01-23 12:00:00,2141-01-23 18:33:00,2141-01-23 18:33:51.14,224275,393,min,,,3553081,3553081,Peripheral Lines,,ContinuousProcess,123,,,1,0,0,FinishedRunning,,393,1
+15614172,27424463,31265727,2153-07-29 18:13:00,2153-07-31 01:25:00,2153-07-31 01:26:00,224277,1872,min,RL Post Forearm,Peripheral - old,137889,137889,Peripheral Lines,,ContinuousProcess,71.6,,,1,1,0,FinishedRunning,,1872,1
+15614172,27424463,31265727,2153-07-29 18:14:00,2153-07-31 01:25:00,2153-07-31 01:26:00,224275,1871,min,R Hand,Peripheral - old,7237219,7237219,Peripheral Lines,,ContinuousProcess,71.6,,,1,1,0,FinishedRunning,,1871,1
+15614172,27424463,31265727,2153-07-30 10:38:00,2153-07-30 10:39:00,2153-07-30 10:38:00,225439,1,None,,,6265769,6265769,Procedures,,Task,71.6,,,0,0,0,FinishedRunning,,1,0
+13441205,22367569,36368623,2171-02-24 13:08:00,2171-03-05 17:19:00,2171-03-05 17:19:25.81,224263,13211,min,,,501655,501655,Invasive Lines,,ContinuousProcess,94.1,,,1,0,0,FinishedRunning,,13211,1
+13441205,22367569,36368623,2171-02-24 13:10:00,2171-02-26 14:01:00,2171-02-26 16:50:00,224277,2931,min,L Hand,Peripheral - old,6103910,6103910,Peripheral Lines,,ContinuousProcess,94.1,,,1,0,0,FinishedRunning,,2931,1
+13441205,22367569,36368623,2171-02-24 13:11:00,2171-02-26 00:52:00,2171-02-26 03:36:00,224277,2141,min,LU Ant Forearm,Peripheral - old,7585899,7585899,Peripheral Lines,,ContinuousProcess,94.1,,,1,0,0,FinishedRunning,,2141,1

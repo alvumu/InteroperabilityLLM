@@ -1,0 +1,13 @@
+subject_id,hadm_id,hcpcs_cd,seq_num,short_description
+13190051,28207805,99219,1,Hospital observation services
+15375607,21000958,G0378,3,Hospital observation per hr
+15375607,21000958,36247,1,Cardiovascular system
+18345557,29242008,58999,2,Female genital system
+12274101,25483724,47999,1,Digestive system
+17891117,21401416,64822,2,Nervous system	
+18077999,20808986,52235,1,Urinary system	
+13309925,20018001,20610,1,Musculoskeletal system	
+15331012,21830740,59841,1,Maternity care and delivery	
+14342500,24618756,31645,1,Respiratory system	
+17475598,20523110,12001,1,Integumentary system	
+19743492,27243057,96372,3,"Hydration therapeutic prophylactic diagnostic injections and infusions and chemotherapy and other highly complex drug or highly complex biologic agent administration"

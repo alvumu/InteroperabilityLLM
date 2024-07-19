@@ -1,0 +1,93 @@
+src_table,table_attribute,gpt_percentage,llama_percentage
+d_items,itemid,1,1
+d_items,label,1,1
+d_items,category,1,1
+datetimeevents, subject_id, 1 ,1
+datetimeevents, stay_id,1 ,1
+datetimeevents, charttime_id,1 ,1
+datetimeevents, storetime_id,1 ,1
+datetimeevents, value,1 ,1
+diagnoses_icd,subject_id,0,0
+diagnoses_icd,hadm_id,0,0
+diagnoses_icd, icd_code, 1,1
+emar,subject_id,1,1
+emar,hadm_id,1,1
+emar,emar_id, 1,1
+emar,emar_seq, 1,1
+emar,pharmacy_id,1,0
+emar,charttime,1,1
+emar,medication,1,1
+emar,event_txt,1,1
+hcpsevents,hcpcs_cd,1,0
+hcpsevents,short_description,1,0
+icustays,subject_id,1,1
+icustays,hadm_id,1,0
+icustays,stay_id,1,1
+icustays,first_careunit,1,0
+icustays,intime,1,1
+icustays,outtime,1,1
+inputevents,subject_id,1,0
+inputevents,stay_id,1,0
+inputevents,starttime,1,1
+inputevents,endtime,1,1
+inputevents,amount,1, 1
+inputevents,amount,1,1
+inputevents,amountuom,1, 1
+inputevents,rate,1, 1
+inputevents,rateuom,1, 1
+microbiologyevents,subject_id,1,1
+microbiologyevents,hadm_id,1,0
+microbiologyevents,charttime,1 ,1
+microbiologyevents,storetime,1 ,1
+microbiologyevents,test_itemid,1 ,1
+microbiologyevents,test_name,1 ,1
+microbiologyevents,org_itemid,1 ,1
+microbiologyevents,org_name,1 ,1
+microbiologyevents,ab_itemid,1 ,0
+microbiologyevents,ab_name,1 ,0
+microbiologyevents,dilution_value,1 ,1
+microbiologyevents,comments,1 ,1
+outputevents,subject_id,1,1
+outputevents,hadm_id,1,0
+outputevents,stay_id,1,0 
+outputevents,charttime,1 ,1
+outputevents,storetime,1 ,1
+outputevents,value,1 ,1
+outputevents,valueuom,1,1
+patients,subject_id,1 ,1
+patients,gender,1 ,1 
+patients,anchor_age,1 ,1 
+pharmacy,subject_id,1 ,1
+pharmacy,hadm_id,1,0
+pharmacy,pharmacy_id,1,0
+pharmacy,medication,1 ,0
+pharmacy,route,1 ,0
+pharmacy,frequency,1 ,0
+pharmacy,duration,1 ,0
+pharmacy,fill_quantity,1 ,0
+prescriptions,subject_id,1,0
+prescriptions,hadm_id,1,0
+prescriptions,icustay_id,1,0
+prescriptions,startdate,1,1
+prescriptions,enddate,1,1
+prescriptions,prod_strength,1,0
+prescriptions,dose_val_rx,1,0
+prescriptions,dose_unit_rx,1,0
+prescriptions,route,1,0
+procedureevents,subject_id,1,0
+procedureevents,hadm_id,1,0
+procedureevents,stay_id,1,0
+procedureevents,starttime,1,1
+procedureevents,endtime,1,1
+procedureevents,itemid,1,1
+procedureevents,location,1,0
+procedureevents,ordercategoryname,1,0
+procedureevents,statusdescription,1,1
+procedures_icd,subject_id,1,0
+procedures_icd,hadm_id,1,1
+procedures_icd,icd_code,1,1
+procedures_icd,icd_version,1,1
+services,curr_service,1,1
+transfers,careunit,1,0
+transfers,intime,1,1
+transfers,outtime,1,1

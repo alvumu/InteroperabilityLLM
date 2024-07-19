@@ -1,0 +1,212 @@
+src_table, table_attribute, gpt_mapping_atribute,llama_mapping_atribute,real_mapping_value
+d_items,itemid,Observation(5),Observation(5),Observation-MedicationAdministration
+d_items,label,Observation(5),Observation(5),Observation-Procedure-MedicationAdministration
+d_items,abbreviation,Observation(5),Observation(5),
+d_items,linksto,Observation(5),Observation(5),
+d_items,category,Observation(5),Observation(5),Observation
+d_items,unitname,Observation(5),Observation(5),
+d_items,param_type,Observation(5),Observation(5),
+d_items,lownormalvalue,Observation(5),Observation(5),
+d_items,highnormalvalue,Observation(5),Observation(5),
+
+datetimeevents, subject_id, Observation(5) ,Patient(5),Observation
+datetimeevents, hadm_id,Observation(5) ,Hospitalization(5),
+datetimeevents, stay_id,Observation(5) ,Encounter(5),Observation
+datetimeevents, charttime_id,Observation(5) ,Observation(5),Observation
+datetimeevents, storetime_id,Observation(5) ,Observation(5),Observation
+datetimeevents, itemid,Observation(5) ,Observation(5),
+datetimeevents, value,Observation(5) ,Observation(5),Observation
+datetimeevents, valueuom,Observation(5) ,Observation(5),
+datetimeevents, warning,Observation(5) ,Observation(5), 
+
+diagnoses_icd, subject_id, Patient(5),Patient(5),Condition
+diagnoses_icd, hadm_id, Encounter(5),Encounter(5),Condition
+diagnoses_icd, seq_num, Condition(5),,
+diagnoses_icd, icd_code, Condition(5),Condition(5),Condition
+diagnoses_icd, icd_version,Condition(5),,
+
+emar,subject_id,Patient(5),Patient(5),Patient
+emar,hadm_id,Encounter(5),Hospitalization(4) Careteam (1),MedicationAdministration
+emar,emar_id, MedicationAdministration(5),MedicationAdministration(5),MedicationAdministration 
+emar,emar_seq, MedicationAdministration(5),MedicationAdministration(5),
+emar,poe_id, MedicationAdministration(5),MedicationAdministration(5),MedicationAdministration
+emar,pharmacy_id,MedicationAdministration(5),Pharmacy(5),MedicationAdministration
+emar,charttime,MedicationAdministration(5),MedicationAdministration(5),MedicationAdministration
+emar,medication,MedicationAdministration(5), MedicationAdministration(5),MedicationAdministration
+emar,event_txt,MedicationAdministration(5),MedicationAdministration(5),MedicationAdministration
+emar,scheduletime,MedicationAdministration(5),MedicationAdministration(5),
+emar,storetime,MedicationAdministration(5),MedicationAdministration(5),
+
+hcpsevents,subject_id,Patient(5),Patient(5),
+hcpsevents,hadm_id,Encounter(5),Encounter(5),
+hcpsevents,hcpcs_cd,Encounter(5),Procedure(5),Encounter
+hcpsevents,seq_num,Encounter(5),Procedure(5),
+hcpsevents,short_description,Encounter(5),Procedure(5),Encounter
+
+icustays,subject_id,Patient(5),Patient(5),Encounter
+icustays,hadm_id,Encounter(5),Hospitalization(5),Encounter
+icustays,stay_id,Encounter(5),Encounter(5),Encounter
+icustays,first_careunit,Encounter(5),Location(5),Encounter
+icustays,last_careunit,Encounter(5),Location(5),
+icustays,intime,Encounter(5),Encounter(5),Encounter
+icustays,outtime,Encounter(5),Encounter(5),Encounter
+icustays,los,Encounter(5),Encounter(5),
+
+inputevents,subject_id,MedicationAdministration(5),Hospitalization(5),MedicationAdministration
+inputevents,hadm_id,MedicationAdministration(5),Hospitalization(5),
+inputevents,stay_id,MedicationAdministration(5),Encounter(5),MedicationAdministration
+inputevents,starttime,MedicationAdministration(5),MedicationAdministration(5),MedicationAdministration
+inputevents,endtime,MedicationAdministration(5),MedicationAdministration(5),MedicationAdministration
+inputevents,storetime,MedicationAdministration(5),MedicationAdministration(5),
+inputevents,itemid,MedicationAdministration(5),Medication(5),
+inputevents,amount,MedicationAdministration(5), MedicationAdministration(5),MedicationAdministration
+inputevents,amount,MedicationAdministration(5),MedicationAdministration(5),MedicationAdministration
+inputevents,amountuom,MedicationAdministration(5), MedicationAdministration(5),MedicationAdministration
+inputevents,rate,MedicationAdministration(5), MedicationAdministration(5),MedicationAdministration
+inputevents,rateuom,MedicationAdministration(5), MedicationAdministration(5),MedicationAdministration
+inputevents,orderid,MedicationAdministration(5), MedicationRequest(5),
+inputevents,ordercategoryname,MedicationAdministration(5), MedicationRequest(5),
+inputevents,secondaryordercategoryname,MedicationAdministration(4), MedicationRequest(5),
+inputevents,ordercomponenttypedescription,MedicationAdministration(5), MedicationRequest(5)
+inputevents,ordercategorydescription,MedicationAdministration(5),MedicationRequest(5)
+inputevents,patientweight,MedicationAdministration(5), Patient(5),
+inputevents,totalamount,MedicationAdministration(5), MedicationAdministration(5),
+inputevents,totalamountuom,MedicationAdministration(5), MedicationAdministration(5),
+inputevents,isopenbag,MedicationAdministration(5), MedicationAdministration(5),
+inputevents,continueinnextdept,MedicationAdministration(5), MedicationAdministration(5),
+inputevents,cancelreason,MedicationAdministration(5),  MedicationAdministration(5),
+inputevents,statusdescription,MedicationAdministration(5), MedicationAdministration(5),
+inputevents,originalamount,MedicationAdministration(5), MedicationRequest(5),
+inputevents,originalrate,MedicationAdministration(5), MedicationRequest(5),
+
+microbiologyevents,subject_id,Observation(5),Hospitalization(5),Observation
+microbiologyevents,hadm_id,Observation(5),Patient(5), Observation
+microbiologyevents,chartdate,Observation(5),Observation(5),
+microbiologyevents,charttime,Observation(5),Observation(5),Observation
+microbiologyevents,spec_itemid,Observation(5),Specimen(5),
+microbiologyevents,spec_type_desc,Observation(5),Observation(5),
+microbiologyevents,test_seq,Observation(5),Observation(5),
+microbiologyevents,storedate,Observation(5),Observation(5),
+microbiologyevents,storetime,Observation(5),Observation(5),Observation
+microbiologyevents,test_itemid,Observation(5),Observation(5),Observation
+microbiologyevents,test_name,Observation(5),Observation(5),Observation
+microbiologyevents,org_itemid,Observation(5),Observation(5),Observation
+microbiologyevents,org_name,Observation(5) ,Observation(5),Observation
+microbiologyevents,isolate_num,Observation(5),Observation(5),
+microbiologyevents,ab_itemid,Observation(5) ,Medication(5),Observation
+microbiologyevents,ab_name,Observation(5) ,Medication(5),Observation
+microbiologyevents,dilution_text,Observation(5) ,Observation(5),
+microbiologyevents,dilution_comparison,Observation(5) ,Observation(5),
+microbiologyevents,dilution_value,Observation(5) ,Observation(5),Observation
+microbiologyevents,interpretation,Observation(5) ,Observation(5),
+microbiologyevents,comments,Observation(5) ,Observation(5),Observation
+
+outputevents,subject_id,Observation(5) ,Patient(5) ,Observation
+outputevents,hadm_id,Observation(5) ,Encounter(5) Hospitalization(1) ,Observation
+outputevents,stay_id,Observation(5) ,Patient(5) ,Observation
+outputevents,charttime,Observation(5) ,Observation(5),Observation
+outputevents,storetime,Observation(5) ,Observation(5),Observation
+outputevents,itemid,Observation(5) ,Observation(5) ,
+outputevents,value,Observation(5) ,Observation(5),Observation
+outputevents,valueuom,Observation(5) ,Observation(5),Observation
+
+patients,subject_id,Patient(5) ,Patient(5),Patient
+patients,gender,Patient(5) ,Patient(5) ,Patient
+patients,anchor_age,Patient(5) ,Patient(5) ,Patient
+patients,anchor_year,Patient(5) ,Patient(5) ,
+patients,anchor_year_group,Patient(5) ,Patient(5),
+patients,dod,Patient(5) ,Patient(5) ,Patient
+
+pharmacy,subject_id,MedicationDispense(5),Patient(5),MedicationDispense
+pharmacy,hadm_id,MedicationDispense(5),Encounter(5),MedicationDispense
+pharmacy,pharmacy_id,MedicationDispense(5),Pharmacy(2) Practitioner(3),MedicationDispense
+pharmacy,poe_id,MedicationDispense(5) ,MedicationRequest(5)
+pharmacy,starttime,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,stoptime,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,medication,MMedicationDispense(5),Medication(5),MedicationDispense
+pharmacy,proc_type,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,status,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,entertime,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,verifiedtime,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,route,MedicationDispense(5),MedicationAdministration(5),MedicationDispense
+pharmacy,frequency,MedicationDispense(5),MedicationAdministration(5),MedicationDispense
+pharmacy,disp_sched,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,infusion_type,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,sliding_scale,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,lockout_interval,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,basal_rate,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,one_hr_max,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,doses_per_24_hrs,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,duration,MedicationDispense(5),MedicationAdministration(5),MedicationDispense
+pharmacy,duration_interval,MedicationDispense(5),MedicationAdministration(5)
+pharmacy,expiration_value,MedicationDispense(5),Medication(5)
+pharmacy,expiration_unit,MedicationDispense(5),Medication(5)
+pharmacy,expirationdate,MedicationDispense(5) ,Medication(5)
+pharmacy,dispensation,MedicationDispense(5) ,MedicationAdministration(5)
+pharmacy,fill_quantity,MedicationDispense(5) ,MedicationAdministration(5),MedicationDispense
+
+prescriptions,subject_id,MedicationRequest(5),Patient(5),Patient
+prescriptions,hadm_id,MedicationRequest(5),Encounter(5),Encounter
+prescriptions,icustay_id,MedicationRequest(5),Encounter(5),MedicationRequest
+prescriptions,startdate,MedicationRequest(5),MedicationRequest(5),MedicationRequest
+prescriptions,enddate,MedicationRequest(5),MedicationRequest(5),MedicationRequest
+prescriptions,drug_type,MedicationRequest(5),MedicationRequest(5),
+prescriptions,drug,MedicationRequest(5),MedicationRequest(5),
+prescriptions,drug_name_poe,MedicationRequest(5),
+prescriptions,drug_name_generic,MedicationRequest(5),
+prescriptions,formulary_drug_cd,MedicationRequest(5),
+prescriptions,gsn,MedicationRequest(5),MedicationRequest(5), 
+prescriptions,ndc,MedicationRequest(5),MedicationRequest(5),
+prescriptions,prod_strength,MedicationRequest(5),Medication(5),MedicationRequest
+prescriptions,dose_val_rx,MedicationRequest(5),MedicationAdministration(5),MedicationRequest
+prescriptions,dose_unit_rx,MedicationRequest(5),MedicationAdministration(5),MedicationRequest
+prescriptions,form_val_disp,MedicationRequest(5),MedicationAdministration(5)
+prescriptions,form_unit_disp,MedicationRequest(5),MedicationAdministration(5)
+prescriptions,route,MedicationRequest(5),MedicationAdministration(5),MedicationRequest
+
+procedureevents,subject_id,Procedure(5),Patient(5),Patient
+procedureevents,hadm_id,Procedure(5),Encounter(5)
+procedureevents,stay_id,Procedure(5),Encounter(5),Procedure
+procedureevents,starttime,Procedure(5),Procedure(5),Procedure
+procedureevents,endtime,Procedure(5),Procedure(5),Procedure 
+procedureevents,storetime,Procedure(5),Procedure(5)
+procedureevents,itemid,Procedure(5),Procedure(5),Procedure
+procedureevents,value,Procedure(5),Observation(5) 
+procedureevents,valueuom,Procedure(5),Observation(5) 
+procedureevents,location,Procedure(5),Location(5),Procedure
+procedureevents,locationcategory,Procedure(5),Location(5) 
+procedureevents,orderid,Procedure(5),Order(5)
+procedureevents,linkorderid,Procedure(5),Order(5)
+procedureevents,ordercategoryname,Procedure(5),Order(5),Procedure
+procedureevents,ordercategorydescription,Procedure(5),Order(5)
+procedureevents,secondaryordercategoryname,Procedure(5),Order(5)
+procedureevents,ordercategorydescription,Procedure(5),Order(5)
+procedureevents,patientweight,Procedure(5),Patient(5)
+procedureevents,totalamount,Procedure(5),Payment(5)
+procedureevents,totalamountuom,Procedure(5),Payment(5)
+procedureevents,isopenbag,Procedure(5),Procedure(5)
+procedureevents,cancelreason,Procedure(5),Procedure(5)
+procedureevents,continueinnextdept,Procedure(5),Procedure(5) 
+procedureevents,statusdescription,Procedure(5),Procedure(5),Procedure 
+procedureevents,originalamount,Procedure(5),Payment(5) 
+procedureevents,originalrate,Procedure(5),Payment(5)
+
+procedures_icd,subject_id,Procedure(5),Patient(5),Procedure
+procedures_icd,hadm_id,Procedure(5),Encounter(5),Procedure
+procedures_icd,seq_num,Procedure(5),Procedure(5),
+procedures_icd,icd_code,Procedure(5),Procedure(5),Procedure
+procedures_icd,icd_version,Procedure(5),Procedure(5),Procedure
+
+services,subject_id,Encounter(5),Patient(5),
+services,hadm_id,Encounter(5),Encounter(5),
+services,transfertime,Encounter(5),Encounter(5),
+services,prev_service,Encounter(5),Encounter(5),
+services,curr_service,Encounter(5),Encounter(5),Encounter
+
+transfers,subject_id,Encounter(5),Patient(5)
+transfers,hadm_id,Encounter(5),Encounter(5)
+transfers,transfer_id,Encounter(5),Location(5)
+transfers,eventtype,Encounter(5),Encounter(5)
+transfers,careunit,Encounter(5),Location(5),Encounter
+transfers,intime,Encounter(5),Encounter(5),Encounter
+transfers,outtime,Encounter(5),Encounter(5),Encounter

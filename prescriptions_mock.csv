@@ -1,0 +1,8 @@
+subject_id,hadm_id,icustay_id,startdate,enddate,drug_type,drug,drug_name_poe,drug_name_generic,formulary_drug_cd,gsn,ndc,prod_strength,dose_val_rx,dose_unit_rx,form_val_disp,form_unit_disp,route	
+42458,159647,,2146-07-21 00:00:00,2146-07-22 00:00:00,MAIN,Pneumococcal Vac Polyvalent,Pneumococcal Vac Polyvalent,PNEUMOcoccal Vac Polyvalent,PNEU25I,048548,00006494300,25mcg/0.5mL Vial,0.5,mL,1,VIAL,IM	
+42458,159647,,2146-07-21 00:00:00,2146-07-22 00:00:00,MAIN,Bisacodyl,Bisacodyl,Bisacodyl,BISA5,002947,00536338101,5 mg Tab,10,mg,2,TAB,PO	
+42458,159647,,2146-07-21 00:00:00,2146-07-22 00:00:00,MAIN,Bisacodyl,Bisacodyl,Bisacodyl (Rectal),BISA10R,002944,00574705050,10mg Suppository,10,mg,1,SUPP,PR	
+42458,159647,,2146-07-21 00:00:00,2146-07-22 00:00:00,MAIN,Senna,Senna,Senna,SENN187,019964,00904516561,1 Tablet,1,TAB,1,TAB,PO	
+42458,159647,,2146-07-21 00:00:00,2146-07-21 00:00:00,MAIN,Docusate Sodium (Liquid),Docusate Sodium (Liquid),Docusate Sodium (Liquid),DOCU100L,003017,00121054410,100mg UD Cup,100,mg,1,UDCUP,PO	
+42458,159647,,2146-07-21 00:00:00,2146-07-22 00:00:00,MAIN,Heparin,Heparin,Heparin Sodium,HEPA5I,006549,63323026201,5000 Units / mL- 1mL Vial,5000,UNIT,1,mL,SC	
+42458,159647,,2146-07-21 00:00:00,2146-07-22 00:00:00,MAIN,Simvastatin,Simvastatin,Simvastatin,SIMV10,016577,51079045420,10mg Tablet,20,mg,2,TAB,PO	
